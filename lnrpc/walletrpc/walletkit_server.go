@@ -713,7 +713,7 @@ func (w *WalletKit) SendOutputs(ctx context.Context,
 	// transaction.
 	tx, err := w.cfg.Wallet.SendOutputs(
 		outputsToCreate, chainfee.SatPerKWeight(req.SatPerKw), minConfs,
-		label,
+		label, true,
 	)
 	if err != nil {
 		return nil, err

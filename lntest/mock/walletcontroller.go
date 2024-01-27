@@ -141,7 +141,7 @@ func (w *WalletController) ImportTaprootScript(waddrmgr.KeyScope,
 
 // SendOutputs currently returns dummy values.
 func (w *WalletController) SendOutputs([]*wire.TxOut,
-	chainfee.SatPerKWeight, int32, string) (*wire.MsgTx, error) {
+	chainfee.SatPerKWeight, int32, string, bool) (*wire.MsgTx, error) {
 
 	return nil, nil
 }

@@ -960,7 +960,7 @@ func (b *BtcWallet) ImportTaprootScript(scope waddrmgr.KeyScope,
 // This is a part of the WalletController interface.
 func (b *BtcWallet) SendOutputs(outputs []*wire.TxOut,
 	feeRate chainfee.SatPerKWeight, minConfs int32,
-	label string) (*wire.MsgTx, error) {
+	label string, allowDust bool) (*wire.MsgTx, error) {
 
 	// Convert our fee rate from sat/kw to sat/kb since it's required by
 	// SendOutputs.
@@ -978,7 +978,7 @@ func (b *BtcWallet) SendOutputs(outputs []*wire.TxOut,
 
 	return b.wallet.SendOutputs(
 		outputs, nil, defaultAccount, minConfs, feeSatPerKB,
-		b.cfg.CoinSelectionStrategy, label,
+		b.cfg.CoinSelectionStrategy, label, allowDust,
 	)
 }
 
@@ -1020,7 +1020,7 @@ func (b *BtcWallet) CreateSimpleTx(outputs []*wire.TxOut,
 		// mistakenly mark small-ish, but not quite dust output as
 		// dust.
 		err := txrules.CheckOutput(
-			output, txrules.DefaultRelayFeePerKb,
+			output, txrules.DefaultRelayFeePerKb, false,
 		)
 		if err != nil {
 			return nil, err

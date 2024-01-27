@@ -4,6 +4,7 @@ import (
 	"errors"
 	"time"
 
+	"github.com/btcsuite/btcd/btcjson"
 	"github.com/btcsuite/btcd/btcutil"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
 	"github.com/btcsuite/btcd/wire"
@@ -124,6 +125,11 @@ type NoChainSource struct {
 	notifChan chan interface{}
 
 	BestBlockTime time.Time
+}
+
+// TestMempoolAccept implements chain.Interface.
+func (*NoChainSource) TestMempoolAccept([]*wire.MsgTx, float64) ([]*btcjson.TestMempoolAcceptResult, error) {
+	return nil, nil
 }
 
 func (n *NoChainSource) Start() error {

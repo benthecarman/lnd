@@ -1083,7 +1083,7 @@ func (r *rpcServer) sendCoinsOnChain(paymentMap map[string]int64,
 	// If that checks out, we're fairly confident that creating sending to
 	// these outputs will keep the wallet balance above the reserve.
 	tx, err := r.server.cc.Wallet.SendOutputs(
-		outputs, feeRate, minConfs, label,
+		outputs, feeRate, minConfs, label, false,
 	)
 	if err != nil {
 		return nil, err
