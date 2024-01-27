@@ -92,12 +92,8 @@ github.com/btcsuite/btcd/chaincfg/chainhash v1.1.0/go.mod h1:7SFka0XMvUgj3hfZtyd
 github.com/btcsuite/btclog v0.0.0-20170628155309-84c8d2346e9f h1:bAs4lUbRJpnnkd9VhRV3jjAVU7DJVjMaK+IsvSeZvFo=
 github.com/btcsuite/btclog v0.0.0-20170628155309-84c8d2346e9f/go.mod h1:TdznJufoqS23FtqVCzL0ZqgP5MqXbb4fg/WgDys70nA=
 github.com/btcsuite/btcutil v0.0.0-20190425235716-9e5f4b9a998d/go.mod h1:+5NJ2+qvTyV9exUAL/rxXi3DcLg2Ts+ymUAY5y4NvMg=
-github.com/btcsuite/btcwallet v0.16.10-0.20241127094224-93c858b2ad63 h1:YN+PekOLlLoGxE3P5RJaGgodZD5DDJSU8eXQZVwwCxM=
-github.com/btcsuite/btcwallet v0.16.10-0.20241127094224-93c858b2ad63/go.mod h1:1HJXYbjJzgumlnxOC2+ViR1U+gnHWoOn7WeK5OfY1eU=
 github.com/btcsuite/btcwallet/wallet/txauthor v1.3.5 h1:Rr0njWI3r341nhSPesKQ2JF+ugDSzdPoeckS75SeDZk=
 github.com/btcsuite/btcwallet/wallet/txauthor v1.3.5/go.mod h1:+tXJ3Ym0nlQc/iHSwW1qzjmPs3ev+UVWMbGgfV1OZqU=
-github.com/btcsuite/btcwallet/wallet/txrules v1.2.2 h1:YEO+Lx1ZJJAtdRrjuhXjWrYsmAk26wLTlNzxt2q0lhk=
-github.com/btcsuite/btcwallet/wallet/txrules v1.2.2/go.mod h1:4v+grppsDpVn91SJv+mZT7B8hEV4nSmpREM4I8Uohws=
 github.com/btcsuite/btcwallet/wallet/txsizes v1.2.5 h1:93o5Xz9dYepBP4RMFUc9RGIFXwqP2volSWRkYJFrNtI=
 github.com/btcsuite/btcwallet/wallet/txsizes v1.2.5/go.mod h1:lQ+e9HxZ85QP7r3kdxItkiMSloSLg1PEGis5o5CXUQw=
 github.com/btcsuite/btcwallet/walletdb v1.4.4 h1:BDel6iT/ltYSIYKs0YbjwnEDi7xR3yzABIsQxN2F1L8=
@@ -274,8 +270,8 @@ github.com/google/go-cmp v0.5.1/go.mod h1:v8dTdLbMG2kIc/vJvl+f65V22dbkXbowE6jgT/
 github.com/google/go-cmp v0.5.4/go.mod h1:v8dTdLbMG2kIc/vJvl+f65V22dbkXbowE6jgT/gNBxE=
 github.com/google/go-cmp v0.5.5/go.mod h1:v8dTdLbMG2kIc/vJvl+f65V22dbkXbowE6jgT/gNBxE=
 github.com/google/go-cmp v0.5.6/go.mod h1:v8dTdLbMG2kIc/vJvl+f65V22dbkXbowE6jgT/gNBxE=
-github.com/google/go-cmp v0.6.0 h1:ofyhxvXcZhMsU5ulbFiLKl/XBFqE1GSq7atu8tAmTRI=
-github.com/google/go-cmp v0.6.0/go.mod h1:17dUlkBOakJ0+DkrSSNjCkIjxS6bF9zb3elmeNGIjoY=
+github.com/google/go-cmp v0.5.9 h1:O2Tfq5qg4qc4AmwVlvv0oLiVAGB7enBSJ2x2DqQFi38=
+github.com/google/go-cmp v0.5.9/go.mod h1:17dUlkBOakJ0+DkrSSNjCkIjxS6bF9zb3elmeNGIjoY=
 github.com/google/gofuzz v1.0.0/go.mod h1:dBl0BpW6vV/+mYPU4Po3pmUjxk6FQPldtuIdl/M65Eg=
 github.com/google/martian v2.1.0+incompatible/go.mod h1:9I4somxYTbIHy5NJKHRl3wXiIaQGbYVAs8BPL6v8lEs=
 github.com/google/martian/v3 v3.0.0/go.mod h1:y5Zk1BBys9G+gd6Jrk0W3cC1+ELVxBWuIGO+w/tUAp0=

@@ -65,6 +65,10 @@ require (
 	pgregory.net/rapid v1.1.0
 )
 
+replace github.com/btcsuite/btcwallet/wallet/txrules => ../btcwallet/wallet/txrules
+
+replace github.com/btcsuite/btcwallet => ../btcwallet
+
 require (
 	github.com/Azure/go-ansiterm v0.0.0-20230124172434-306776ec8161 // indirect
 	github.com/Microsoft/go-winio v0.6.1 // indirect

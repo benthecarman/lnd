@@ -127,6 +127,11 @@ type NoChainSource struct {
 	BestBlockTime time.Time
 }
 
+// TestMempoolAccept implements chain.Interface.
+func (*NoChainSource) TestMempoolAccept([]*wire.MsgTx, float64) ([]*btcjson.TestMempoolAcceptResult, error) {
+	return nil, nil
+}
+
 func (n *NoChainSource) Start() error {
 	n.notifChan = make(chan interface{})
 
@@ -212,12 +217,6 @@ func (n *NoChainSource) Notifications() <-chan interface{} {
 
 func (n *NoChainSource) BackEnd() string {
 	return noChainBackendName
-}
-
-func (n *NoChainSource) TestMempoolAccept([]*wire.MsgTx,
-	float64) ([]*btcjson.TestMempoolAcceptResult, error) {
-
-	return nil, nil
 }
 
 func (n *NoChainSource) MapRPCErr(err error) error {
