@@ -3,9 +3,5 @@
     "editor.rulers": [
         80
     ],
-    "go.buildTags": "autopilotrpc chainrpc dev invoicesrpc neutrinorpc peersrpc signrpc walletrpc watchtowerrpc",
-    "go.toolsEnvVars": {
-        "GOOS": "",
-        "GOARCH": ""
-    }
+    "go.buildTags": "autopilotrpc chainrpc dev invoicesrpc neutrinorpc peersrpc signrpc walletrpc watchtowerrpc"
 }
