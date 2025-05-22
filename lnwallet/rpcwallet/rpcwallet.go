@@ -124,10 +124,10 @@ func (r *RPCKeyRing) NewAddress(addrType lnwallet.AddressType, change bool,
 func (r *RPCKeyRing) SendOutputs(inputs fn.Set[wire.OutPoint],
 	outputs []*wire.TxOut, feeRate chainfee.SatPerKWeight,
 	minConfs int32, label string,
-	strategy basewallet.CoinSelectionStrategy) (*wire.MsgTx, error) {
+	strategy basewallet.CoinSelectionStrategy, allowDust bool) (*wire.MsgTx, error) {
 
 	tx, err := r.WalletController.SendOutputs(
-		inputs, outputs, feeRate, minConfs, label, strategy,
+		inputs, outputs, feeRate, minConfs, label, strategy, allowDust,
 	)
 	if err != nil && err != basewallet.ErrTxUnsigned {
 		return nil, err
